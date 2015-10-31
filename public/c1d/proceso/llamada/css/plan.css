@@ -1,0 +1,30 @@
+.plan__box {
+  text-align: center;
+  margin: 0 auto;
+}
+.plan__title {
+  text-align: center;
+}
+.plan__title h2 {
+  font-size: 2.5em;
+}
+.plan__sub-title {
+  text-align: center;
+  margin: 0 auto;
+}
+.plan__sub-title h3 {
+  font-size: 2.5em;
+}
+.plan__paquetes {
+  background: #808080;
+  text-align: center;
+  magin: 0 auto;
+}
+.plan__paquetes .paquetes__estandar {
+  background: #800080;
+  width: 300px;
+}
+.plan__paquetes .paquetes__premium {
+  background: #cd853f;
+  width: 300px;
+}

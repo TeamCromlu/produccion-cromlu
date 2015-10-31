@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+.Header-Main {
+  background: #fff;
+}
+.Header-Main__box {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.Header-Main__logo {
+  margin-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.Header-Main__logo a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.Header-Main__logo a img {
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header-Main__logo a h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.Process {
+  max-width: 700px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 3em auto;
+  background: #fff;
+  padding-bottom: 1em;
+}
+.Process__art {
+  text-align: center;
+}
+.Process__head h1 {
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  background-color: #40dcaa;
+  padding: 0.7em 0;
+  color: #fff;
+  font-size: 2em;
+  margin: 0 0 0.5em 0;
+}
+.Process__head h2 {
+  margin: 1.5em 0;
+  color: #464646;
+}
+.Process__btn {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.Process__btn a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #00e2d4;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-bottom: 4px solid #00d3c5;
+}
+.Process__btn a:hover {
+  background: #1efbed;
+  border-bottom: 4px solid #045651;
+}
+.Process__text p {
+  margin: 2em 0;
+  color: #171717;
+}
+.Process__text p span {
+  font-weight: bold;
+}
+.numero-ico {
+  background: #000;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 30px;
+}

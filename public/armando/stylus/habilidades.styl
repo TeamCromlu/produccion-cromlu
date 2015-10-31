@@ -1,0 +1,61 @@
+// variables colores
+color__titulo = #373737
+
+.texto
+	margin-bottom 2em
+	width 100%
+	display inline-block
+	vertical-align top
+	h2
+		margin-bottom .5em
+	p 
+		font-size 1.2em
+.image
+	width 100%
+	display inline-block
+	img 
+		width 100%
+
+.Abilities
+	padding 0 1em
+	&__content
+		padding 1em 0
+		margin 0 auto
+	&__title
+		h2
+			font-size 2.5em
+			color color__titulo
+	&__steps
+		padding 1em 0
+		border-bottom 8px dashed rgba(0, 110, 189, 0.82)
+		margin 0 auto
+	&__title2
+		h2
+			font-size 2em
+			color color__titulo
+			
+@media screen and (min-width 1000px)
+	.texto
+		text-align left
+		margin-right 2%
+		display inline-block
+		margin-bottom 2em
+		width 45%
+	.image
+		width 45%
+		display inline-block
+		img 
+			width 100%
+			
+	.Abilities
+		&__content
+			text-align center
+		&__steps
+			text-align center
+			margin auto
+		&__text2
+			float right 
+		&__image2
+			margin-left 3%
+			float left
+			

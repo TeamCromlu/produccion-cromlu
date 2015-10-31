@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+.Call {
+  max-width: 600px;
+  margin: 3em auto;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.Call__art h1 {
+  padding: 0.5em 0;
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #40dcaa;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.Call__art h2 {
+  color: #464646;
+  padding-top: 0.7em;
+  padding-bottom: 0.5em;
+  font-size: 1.7em;
+}
+.Call__art p {
+  color: #171717;
+  font-size: 1.4em;
+  line-height: 1.4;
+  padding-bottom: 1.5em;
+}
+.Call__art p span {
+  font-weight: bold;
+}
+.Header-Main {
+  background: #fff;
+}
+.Header-Main__box {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.Header-Main__logo {
+  margin-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.Header-Main__logo a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.Header-Main__logo a img {
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header-Main__logo a h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.numero-ico {
+  background: #000;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 30px;
+}

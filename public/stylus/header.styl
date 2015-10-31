@@ -1,0 +1,112 @@
+.Header
+	box-shadow 0px 4px 3px rgba(0,0,0,.24)
+	position fixed
+	width 100%
+	&__mobile
+		white 100%
+		display block
+		background white
+	&__logo
+		display inline-block
+		padding .5em
+		a
+			color color__gris
+			text-decoration none
+		img
+			display inline-block
+			width 50px
+		h1
+			padding .4em 0
+			vertical-align top
+			display inline-block
+			font-size 1.5em
+	&__icon-menu
+		cursor pointer
+		padding 1.4em .5em
+		float right
+		display inline-block
+		a 
+			font-size 1.3em
+			text-decoration none
+			color white
+			padding .4em
+			border-radius 5px
+			background-color #01E6D5
+			// border 2px solid gray
+		
+	&__desktop
+		background white
+	&__logo2
+		padding-top .3em
+		padding-left .5em
+		display none
+		a
+			color color__gris
+			text-decoration none
+		img
+			display inline-block
+			width 50px
+		h1
+			padding .4em 0
+			vertical-align top
+			display inline-block
+			font-size 1.5em			
+	&__nav
+		position fixed
+		left -100%
+		height auto
+		width 100%
+		background-color white
+		text-align center
+	&__list:first-child
+		border-top 1px solid #01E6D5
+	&__botones
+		display block
+		border-bottom 1px solid #01E6D5
+		// :first-child
+		// 	border-top 1px solid #01E6D5
+		a
+			font-size 1.2em
+			padding 1em 1em
+			display block
+			font-weight bold
+			text-decoration none
+			color gray
+			transition 0.2s
+		:hover
+			color white
+			background-color #01E6D5
+		
+@media screen and (min-width 764px)
+	.Header
+		&__mobile
+			display none
+		&__logo2
+			margin-left 1em
+			float left
+			display inline-block
+		&__nav
+			height auto
+			position initial
+		&__list
+			padding-right 1.5em
+			text-align right
+			&:first-child
+				border-top none
+		&__botones
+			text-align center
+			display inline-block
+			border-bottom none
+			&:last-child
+				margin-left 2em
+				a
+					max-width 163px
+					margin auto
+					color #00E6D5
+					padding .5em 1em
+					border-radius 50px
+					border 1px solid #00E6D5
+					&:hover						
+						background-color #01E6D5
+						color white
+						border 1px solid #01E6D5

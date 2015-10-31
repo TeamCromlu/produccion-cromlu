@@ -1,0 +1,37 @@
+.Portafolio
+	border-bottom 8px dashed rgba(0, 110, 189, 0.82)
+	padding 2em 0 4em 0
+	width 100%
+	&__text
+		padding 1em
+		h2
+			margin-bottom .5em
+			font-size 2.5em
+		p 
+			margin-bottom .5em
+			font-size 1.2em
+	&__job 
+		width 100%
+		figure
+			margin 1em auto
+			width 80%
+			img 
+				width 100%
+	
+
+@media screen and (min-width 768px)
+	.Portafolio
+		width 100%
+		&__job 
+			figure
+				margin 0
+				display inline-block
+				width 49.6%
+				img 
+					width 100%
+					
+@media screen and (min-width 1000px)
+	.Portafolio
+		&__job
+			figure
+				width 32.9%

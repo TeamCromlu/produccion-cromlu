@@ -1,0 +1,38 @@
+@import 'nib'
+@import 'header.styl'
+@import 'habilidades.styl'
+@import 'contacto.styl'
+@import 'preparacion.styl'
+@import 'portafolio.styl'
+@import 'video.styl'
+
+// variables colores
+color__titulo = #373737
+
+*
+	font-size 16px
+	margin 0
+	padding 0
+	font-family: 'Raleway', sans-serif;
+	
+.Header-fixed
+		background #00144C
+		height 660px
+.Body_Main
+	background #EEEEEE
+		
+@media screen and (min-width 768px)
+	body
+		width 100%
+		position relative
+		display flex
+	.Header-fixed
+		width 30%
+		display inline-block
+		text-align top
+		position fixed
+		height 100vh	
+	.Body_Main
+		width 70%
+		margin-left 30%		
+		

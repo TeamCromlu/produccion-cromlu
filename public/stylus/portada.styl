@@ -1,0 +1,51 @@
+.Front
+	background-color #E0AC65
+	padding 7em 0
+	background url('../image/portada.jpg')
+	background-size cover
+	background-repeat no-repeat
+	&__box
+		text-align center
+	&__text
+		h2
+			font-family 'Raleway' sans-serif
+			padding .5em 0
+			font-size 2em
+			color white
+		p 
+			font-size 1.3em
+			color white
+	&__botoncito
+		padding-top 5em
+		text-align center
+		margin 0 auto
+		a
+			font-weight bold
+			padding .7em .5em
+			font-size 1.8em
+			text-decoration none
+			color white
+			border-radius 50px
+			background-color rgba(0, 210, 196, 0.71)
+			&:hover
+				color white
+				border 2px solid #FFFFFF
+				background-color rgba(0, 230, 213, 0.87)
+
+				
+
+@media screen and (min-width 321px)
+	.Front
+		&__box
+			margin auto
+			width 85%
+@media screen and (min-width 764px)
+	.Front
+		padding 14.7% 0
+		&__text
+			h2
+				font-size 3em
+			p
+				margin auto
+				width 50%
+				font-size 1.7em		

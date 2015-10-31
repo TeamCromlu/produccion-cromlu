@@ -1,0 +1,305 @@
+/*@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/OpenSans-Regular-webfont.eot');
+    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+*/
+
+}
+a
+{
+	color: #22BCE0;
+	text-decoration: none;
+}
+body
+{
+	background: #EEEEEE;
+	font-family: "Open Sans";
+	font-size: 16px;
+}
+footer
+{
+	background:#22BCE0;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	padding: 1em;
+}
+footer p:first-child
+{
+	margin-bottom:0;
+}
+footer p:last-child
+{
+	margin-top: 0;
+}
+
+footer p:last-child:before
+{
+	content: "- ";
+}
+footer p:last-child:after
+{
+	content: " -";
+}
+
+
+header
+{
+	background: #343854;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+}
+header h1
+{
+	font-size: 1.4em;
+	font-weight: normal;
+	padding: 1em 0 .1em 0;
+	margin-bottom: 1em;
+}
+header #logo
+{
+	border-right: 1px solid white;
+	margin-right: 0.6em;
+	padding: .6em .4em;
+
+}
+header #logo img
+{
+	/*margin-right: 0.5em;
+	padding-right: 0.5em;*/
+	width: 63px;
+}
+header img:hover
+{
+	-webkit-transition:.6s;
+	-webkit-transform:rotate(360deg);
+	/*-webkit-transform:rotate(90deg);*/
+	/*-moz-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);*/
+}
+header #avatar img
+{
+	border-radius: 50%;
+	width: 55px;
+}
+header #avatar
+{
+	margin: 0.5em 0.5em 0 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+header figure
+{
+  float: left;
+}
+#logo
+{
+	margin: 0px;
+}
+
+nav
+{
+	background: #80BCA3;
+	box-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
+	padding: 0 6em 0 0;
+	position: relative;
+
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul #publicar_Nav
+{
+	position: absolute;
+	top: -0.3em;
+	right: 0;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+nav ul li a  /*Conviene hacerlos asi para que sean botones click*/
+{
+	color :white;
+	display: inline-block;  /*HACE QUE ESTO SEA UNA CAJA (por que es texto)*/
+	padding: 0.5em;	 /*LE doy margen interno Todo lo hace un boton mas clickeable*/
+	text-decoration: none; 
+}
+nav ul li a:hover
+{
+	background: peru;
+	-webkit-transition:.5s;
+}
+nav ul #publicar_Nav a
+{
+	font-style: italic;
+	border-radius: 4px;
+	padding: 0.8em 0.5em;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px ;
+	box-shadow:rgba(0,0,0,0.5) 5px 5px 20px ;
+	background: skyblue;	
+	text-decoration: none;
+}
+nav ul #publicar_Nav a:hover
+{
+	background: #F4502A;
+	padding: 1em .8em;
+}
+
+
+#contenido
+{
+	margin-top: 1em;
+}
+#contenido .item
+{
+	background: white;
+	border-bottom: 3px solid #22BCE0;
+	margin-bottom: 3em;
+	margin-right: 3%;
+	margin-left: 3%;
+	position: relative;
+	min-height: 128px;
+	
+}
+#contenido .item .autor_item
+{
+	color: #AAA;
+}
+#contenido .item .datos_item
+{
+	margin-top: 1em 1em 0 0;
+	text-align: right;
+	padding-top: 0.5em;
+}
+#contenido .item .datos_item .fecha_item
+{
+	color: #AAA;
+	margin: 0 1em;
+
+}
+#contenido .item .datos_item .tag_item
+{
+	background: #F4502A;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	text-decoration: none;
+	/*LO HACE COMO QUE UN BOTON GORDITO*/
+	display: inline-block;
+	padding: 0.2em 0.5em;
+}
+#contenido .item .imagen_item
+{
+	float: left;
+	margin: 0 1em 0 0;
+}
+#contenido .item .imagen_item img
+{
+	width: 96px;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1.2em;
+	font-style: italic;
+	padding-top: 0.5em;
+}
+#contenido .item .titulo_item a
+{
+	color:#444;
+	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	left: 2%;
+	margin-top: 3px;
+	padding:  0.2em 0.5em;
+	position: absolute;
+	top: 100%;
+	width: 95%;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item
+{
+	float: right;
+}
+/*@media print{
+	body
+	{
+		font-size: 50px;
+	}
+} */
+@media screen and (min-width:800px){
+	body
+	{
+		
+	}
+	#contenido{
+		overflow: hidden;
+	}
+	#contenido .item{
+		width: 44%;
+		float: left;
+		margin-right: 0.8%;
+	}
+	#contenido .item:nth-child(odd){
+		margin-right: 0%;
+		margin-left: 5%;
+	}
+}
+@media (max-width: 500px){
+	input
+	{
+		margin-left: 34%;
+		display: block;
+	}
+}
+
+/*
+FORMULARIO
+*/
+.formulario
+{
+	padding: 1em;
+	text-align: right;
+	display: none;
+}
+.formulario input
+{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="submit"]
+{
+	  font-style: italic;
+	  text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	  box-shadow: rgba(0,0,0,0.5) 3px 3px 18px;
+	  background: orange;
+	  text-decoration: none;
+	  border-color: white;
+}
+
+
+.dasd
+{	
+	-webkit-transition:.4s;
+	-webkit-transform:rotate(360deg);
+}

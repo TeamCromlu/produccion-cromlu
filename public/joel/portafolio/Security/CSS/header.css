@@ -1,0 +1,74 @@
+body
+{
+	margin: 0px;
+}
+#headerPrincipal
+{
+ font-family: 'Oswald', sans-serif;
+ height:100px;
+ width: 100%;
+ background: #ffaf4b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); 	
+}
+h1
+{
+	margin: 0px;
+    padding-top: 20;
+    padding-left: 7%;
+	display: inline-block;
+}
+#FraseLogo
+{
+	display: inline-block;
+	width: 130;
+	text-transform: uppercase;
+	font-size: 10pt;
+	border-left: 1px solid white;
+	padding-left: 10px;
+	margin-left: 10px;
+	position: relative;
+	top: -4px;
+}
+#navPrincipal
+{
+	display:inline-block;
+	position: relative;
+	top:-20px;
+    margin-left: 38%;
+}
+#navPrincipal ul li
+{
+	/*UBICANDO EL NAV*/
+	list-style-type: none;
+	display: inline-block;
+	border-right: 1px solid white;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#navPrincipal ul li:last-child
+{
+	/*firsh-child*/
+	/*PARA QUITAR EL ULTIMO PALITO BLANCO DEL FINAL*/
+    border: 0px;
+}
+#navPrincipal ul li a
+{
+	/*AFECTANDO A LA LETRA*/
+	color:black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 14pt;
+	font-weight: bold;
+
+}
+#navPrincipal ul li a:hover
+{
+	/*DARLE UN COLOR DE PASE DE MOUSE BLANCO*/
+	color:white;
+}

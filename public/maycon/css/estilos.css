@@ -1,0 +1,371 @@
+*{
+	font-family: 'Open Sans', sans-serif,arial;
+	font-size: 16px;
+	margin: 0;
+	padding:0;
+}
+body{
+	background: #FFFFFA;
+}
+header {
+	display: block;
+	background: rgb(0, 26, 58);
+	box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+	height: 92px;
+	position: fixed;
+	top:0;
+	width: 100%;	
+ 	border-bottom: 2px solid rgb(0, 26, 58);
+}
+header figure{
+	margin: 0
+}
+header #menu ul{
+ 	text-align: center;
+}
+header #menu ul li {
+    height: 90px;
+    display: inline-block;
+    line-height: 5;
+    transition: 0.2s;
+    width: 130px;
+}
+header #menu ul li:hover{
+	background: #023F58;
+ 	border-bottom: 4px solid #00719e;
+}
+header #menu ul li a{	
+    display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+header .menu .avatar{
+	padding: 9px;
+	position: absolute;
+}
+header .menu .avatar img{
+	border-radius: 10%;
+	width: 71px;
+}
+footer{
+	padding: 3em 0;
+	width: 100%;
+	height: auto;
+	background: rgb(0, 26, 58);
+}
+footer p{
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 1em;
+	margin: auto;
+}
+#contacto{
+	padding-bottom: 2em;
+	background: peru;
+}
+#contacto h2 {
+	color: #222a4c;
+	font-size: 3.8em;
+	margin-bottom: .3em;
+}
+#contacto #subtitulo figure{
+	margin: 3em 0 0 0;
+}
+#contacto #subtitulo figure img{
+	width: 100px;
+	border-radius: 10%;
+	margin: 0 1em 1em 1em;
+}
+#contacto #subtitulo h2{
+	font-size: 2em;
+	color: #282828;
+}
+#contacto #subtitulo h3{
+	font-size: 1.3em;
+	color: #353535;
+}
+#portafolio{
+	background: #68FF95;
+	height: auto;
+}
+#portafolio .pholio {
+	margin-top: 3em;
+	text-align: center;
+	display: inline-block;
+	width: 31%;
+	padding: 0.6em;
+}
+#portafolio .pholio div{
+	height: auto;
+	width: 100%;
+}
+#portafolio .pholio div a{
+	background: rgba(1, 53, 142, 0.65);
+	line-height: 9;
+	padding: 0.2em 0.8em;
+	font-size: 2em;
+	text-decoration: none;
+	color: white;
+}
+#portafolio .pholio div a:hover{
+	color: black;
+	background: rgba(228, 5, 5, 0.65);
+}
+#portafolio .pholio h3{
+	font-size: 1.5em;
+	color: #353535;
+	margin: 0 0 0.2em 0;
+}
+#portafolio .pholio #puls{
+	background: url("../image/portafolio/wall1.jpg")no-repeat center center;
+	background-size: 400px 300px;
+}
+#portafolio .pholio #devflix{
+	background: url("../image/portafolio/2.jpg")no-repeat center center;
+	background-size: 400px 300px;
+}
+#portafolio .pholio #paramore{
+	background: url("../image/portafolio/3.jpg")no-repeat center center;
+	background-size: 400px 300px;
+}
+#portafolio .pholio #portafolio{
+	background: url("../image/portafolio/4.jpg")no-repeat center center;
+	background-size: 400px 300px;
+}
+#portafolio .pholio #apipoke{
+	background: url("../image/portafolio/5.jpg")no-repeat center center;
+	background-size: 400px 300px;
+}
+#portafolio #texto{
+	margin: 0;
+}
+#portafolio #texto div{
+	margin: auto;
+	width: 1180px;
+}
+#preparacion{
+	padding-bottom: 0;
+	background-color: #3acdff;
+}
+#preparacion{
+	text-align: center;	
+	padding-bottom: 2em;
+}
+#preparacion #texto{
+	margin:0 auto 3em auto;
+}
+#preparacion #texto h2, #portafolio #texto h2 {
+	padding-bottom:.5em; 
+	color: #222a4c;
+	font-size: 2.9em;
+}
+#preparacion #texto div{
+	margin: auto;
+    width: 950px;
+}
+#preparacion #texto p, #portafolio #texto p{
+	font-size: 2em;
+	text-align: center;	
+}
+#preparacion .caja1{
+	margin-bottom: 1em;
+	margin-top: 1em;
+	width: 32%;
+  	display: inline-block;
+}
+#preparacion .caja1 h3{
+	font-size: 2em;
+	margin: 0.5em 0 
+}
+#preparacion .caja1 p{
+	font-size: 1.2em;
+}
+#preparacion .caja1 .imag1{
+	width: 250px;
+	margin: 0;
+}
+#yo{
+	padding: 11em 0;
+	background-color: #58FFC7;
+	height: auto;
+}
+#yo #caja1{
+	overflow: hidden;
+  	margin: 0 auto;
+  	width: 940px;
+}
+#yo #caja1 div {
+	width: 600px;
+   	float: left;
+   	margin: 0em;
+}
+#yo #caja1 div a{
+	text-decoration: none;
+	color: #01406B;
+	font-size: 1em;
+}
+#yo div h2{
+	padding-bottom: 0.5em;
+	font-size:3.8em;
+	color: #245474;
+}
+#yo div p{
+	text-align: justify;
+	font-size: 1.9em;
+}
+#yo div #avatar{
+	text-align: center;
+  	display: inline-block;
+  	float: left;
+  	margin: 2.5em 0 0 2em;
+}
+#yo #avatar img{
+	border-radius: 50%;
+	width: 270px;
+} 
+.bio {
+	background: url("../image/background-header.jpg")no-repeat center center;
+	overflow: hidden;
+	padding: 4.5em 0;
+	text-align: center;
+	color: white;
+}
+.bio div{
+	margin: 3em 0;
+	padding:0;
+}
+.bio div h1 {
+	font-size: 3em;
+	margin: .5em;
+}
+.bio div h2{
+	font-size: 1.5em;
+}
+.bio div #logo-grande{
+	margin: 0; 
+}
+.bio div #logo-grande img {
+	width: 250px;
+	border-radius: 50%;
+}
+.menu-bar {
+	display: none;
+}
+.secciones{
+	padding: 7em 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+	#preparacion #texto div, #portafolio #texto div{
+ 		margin: 0;
+ 		width: 100%;
+ 	}
+}
+@media screen and (max-width: 955px){
+	#preparacion #texto p,  #portafolio #texto p{
+		width: 100%;
+		text-align: justify;
+ 	}
+}
+@media screen and (max-width: 945px){
+	header #menu {
+		background: #002552;
+		left: -100%;
+		position: fixed;
+		width: 100%;
+	}
+	header #menu ul li {
+		border-bottom: 1px solid #00719e;
+		display: block;
+		float:none;
+		width: 100%
+	}
+	header .menu .avatar{
+		display: none;
+	}
+	header .menu-bar {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		display: block;
+		height: 92px;
+	}
+	header .menu-bar figure{
+		background: rgba(1, 28, 125, 0.44);
+		display: inline-block;
+		padding: 9.5px;
+	}
+	header .menu-bar figure img{
+		border-radius: 10%;
+		width: 70px;
+	}
+	header .menu-bar .nombre{
+		height: 92px;
+		text-decoration: none;
+	}
+	header .menu-bar .icon_menu{
+		cursor:pointer;
+		background: #002552;
+		padding: 1px 0;
+		position: absolute;
+		text-align: center;
+		width: 100px;
+	    color: white;
+	    font-size: 1.43em;
+	    font-weight: bold;
+	    line-height: 4;
+	    right: 0;
+	    text-decoration: none;
+	}
+	header .menu-bar .nombre{
+		color: white;
+		display: inline-block;
+		float: left;
+		font-size: 1.5em;
+		font-weight: bold;
+		line-height: 4;
+		margin-left:0.5em;
+		position: absolute;
+	}	
+	#yo{
+		height: auto;
+	}
+	#yo #caja1{
+		width: 96%;
+	}
+	#yo #caja1 div{
+		display: block;
+		width: 100%;		
+	}
+	#yo #caja1 #avatar{ 
+		width: 100%;
+		display: block;
+		margin:2em 0 0 0;
+	}
+	#portafolio .pholio{
+		width: 42%;
+	}
+	#preparacion .caja1{
+		width: 42%;
+  	}
+	.bio{
+		height: auto;
+	}
+}
+@media screen and (max-width: 800px){
+	#preparacion .caja1{
+		display: block;
+		width: 100%;
+	}
+	#portafolio .pholio{
+		display: block;
+		margin: 0 auto 1.5em auto;
+		width: 98%;
+		padding: 0;
+	}
+}
+
