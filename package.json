@@ -1,6 +1,6 @@
 {
-  "name": "default",
-  "version": "0.0.0",
+  "name": "AppCromlu",
+  "version": "0.1.3",
   "description": "A sample Node.js app using Express 4",
   "private": true,
   "main": "app.js",

@@ -9,7 +9,7 @@ var Hogan = require('hogan.js');
 var fs = require('fs');
 
 // get file
-var template = fs.readFileSync('./views/tem_mail.hjs','utf-8');
+var template = fs.readFileSync('./views/mail_1.hjs','utf-8');
 // compile template
 var compiledTemplate = Hogan.compile(template);
 
@@ -31,9 +31,8 @@ function handleSayHello(req, res) {
 
 	var mailOptions = {
 	    from: 'Cromlu  <web@cromlu.com>', // sender address
-	    to: req.body.email, // list of receivers
-	    subject: 'Cromlu', // Subject line
-	    text: 'Hola todo funciona de marvilla ', // plaintext body
+	    to: req.body.email + ', ' +'cromlu.web@gmail.com', // list of receivers
+	    subject: 'Cromlu: Tu Propio portafolio efectivo en la web', // Subject line
 	    html: compiledTemplate.render({
 	    	name : req.body.nombre,
 	    	telefono: req.body.telefono,
@@ -48,12 +47,12 @@ function handleSayHello(req, res) {
 	    if(error){
 	        console.log(error);
 	        res.render('error_Mensaje');
+	        // res.send("mensaje no envio: " , error )
 	    }
 	    console.log('Message sent: ' + info);
 	    // res.send('mensaje enviado :D');
-	    res.render('send_ok', { name: req.body.nombre, email : req.body.email})
+	    res.render('send_ok-comprar', { name: req.body.nombre, email : req.body.email})
 	});
 }
-
 
 module.exports = router;

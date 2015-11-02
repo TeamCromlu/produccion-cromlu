@@ -34,14 +34,13 @@
 			!Listo! <span>{{name}}</span> , Estamos a punto de empezar :D
 		</h2>
 		<p class="mensaje">
-			Te hemos enviado un e-mail con más información a: <strong>{{email}}</strong> <br>
+			Te hemos enviado un e-mail a: <strong>{{email}}</strong> <br>
 			porfavor revisa tu bandeja de correo e-mail y comencemos ;)
 		</p>
 		<h4>
 			*si no llega, porfavor revisa en la zona de spam <br>
-			**también puedes escribirnos directamente a web@cromlu.com
+			**también puedes escribirnos directamente a web@cromlu.com  
 		</h4>
-		<a href="/comprar">Comenzar Ahora!!</a>
 	</div>
 </section>
 </body>
