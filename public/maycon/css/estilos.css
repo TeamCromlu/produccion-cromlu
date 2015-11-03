@@ -111,7 +111,7 @@ footer p{
 	color: white;
 }
 #portafolio .pholio div a:hover{
-	color: black;
+	color: white;
 	background: rgba(228, 5, 5, 0.65);
 }
 #portafolio .pholio h3{
@@ -227,21 +227,27 @@ footer p{
 	width: 270px;
 } 
 .bio {
-	background: url("../image/background-header.jpg")no-repeat center center;
+	background: url("../image/background-header.png");
+	background-color: #AF7E53;
 	overflow: hidden;
 	padding: 4.5em 0;
 	text-align: center;
 	color: white;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bio div{
 	margin: 3em 0;
 	padding:0;
 }
 .bio div h1 {
+    text-shadow: 1px 1px 2px #282828;
 	font-size: 3em;
 	margin: .5em;
 }
 .bio div h2{
+    text-shadow: 1px 1px 2px #282828;
 	font-size: 1.5em;
 }
 .bio div #logo-grande{

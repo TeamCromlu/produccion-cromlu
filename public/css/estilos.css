@@ -448,7 +448,7 @@ body {
 }
 .escoge__modelos .modelos--item figure img:hover {
   background: #61402c;
-  box-shadow: rgba(89,255,233,0.68) 0px 0px 28px;
+  box-shadow: rgb(255, 82, 0) 0px 0px 28px;
 }
 @media (min-width: 768px) {
   .escoge {
