@@ -152,9 +152,9 @@ body {
   }
 }
 .Front {
-  background-color: #e0ac65;
   padding: 7em 0;
   background: url("../image/portada.jpg");
+  background-color: #e0ac65;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -305,6 +305,7 @@ body {
   height: 750px;
   whith: 100%;
   background: url("../image/convence.jpg");
+  background-color: #bc9351;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -498,8 +499,8 @@ body {
   }
 }
 .personalizado {
-  background: #f4f5f6;
   background-image: url("../image/estilo2.jpg");
+  background-color: #d4b297;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 4em;
