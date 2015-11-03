@@ -90,7 +90,7 @@ body {
 }
 .Header__botones a {
   font-size: 1.2em;
-  padding: 1em 1em;
+  padding: 1em 0.5em;
   display: block;
   font-weight: bold;
   text-decoration: none;
@@ -127,7 +127,7 @@ body {
     border-bottom: none;
   }
   .Header__botones:last-child {
-    margin-left: 2em;
+    margin-left: 1em;
   }
   .Header__botones:last-child a {
     max-width: 163px;
@@ -141,6 +141,14 @@ body {
     background-color: #01e6d5;
     color: #fff;
     border: 1px solid #01e6d5;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .Header__botones a {
+    padding: 1em 1em;
+  }
+  .Header__botones:last-child {
+    margin: left 2em;
   }
 }
 .Front {
