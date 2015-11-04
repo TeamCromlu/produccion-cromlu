@@ -155,46 +155,76 @@
 					¿Como pagar?
 				</h3>
 			</div>
-			<article class="pagar__steps">
-				<figure>
-					<img src="image/steps/step1.png" alt="">
-				</figure>
-				<p>
-					Realiza el deposito bancario a la cuenta:
-				</p>
-				<ul>
-					<strong>
-						>400 3068610213<br>
-						(interbank-dolares)<br>
-					</strong>
-					<strong>
-						>411 3073616443<br>
-						(interbank-soles)
-					</strong>
-				</ul>
-			</article>
-			<article class="pagar__steps">
-				<figure>
-					<img src="image/steps/step2.png" alt="">
-				</figure>
-				<p>
-					Toma foto/escanea el boucher o recibo
-				</p>
-			</article>
-			<article class="pagar__steps">
-				<figure>
-					<img src="image/steps/step3.png" alt="">
-				</figure>
-				<p>
-					Envianos la foto/escaneo del boucher o recibo y el plan elegido a: <br>
-				</p>
-				<h4>web@cromlu.com</h4>	
-			</article>
-			<div class="pagar__mensaje">
-				<h3>
-					Te enviaremos un e-mail de confirmación a tu correo al recibir el pago <br>
-					y enseguida entraremos a la acción
-				</h3>
+
+<!-- 			<div class="plan__tarjeta">
+				<div class="">A</div>
+				<h2>Por: <strong>Tarjeta de Credito/Debito</strong></h2><br>
+				<label for="pay__card--name">Titular de la tarjeta</label><br>
+				<input type="text" placeholder="Ingresa el nombre del titular" id="pay__card--name"><br>
+				<label for="pay__card--number">Numero de la tarjeta</label><br>
+				<input type="text" placeholder="Ingresa el numero " id="pay__card--number"><br>
+				<label for="pay__card--cvv">Codigo de Seguridad</label><br>
+				<input type="text" placeholder="CVV " id="pay__card--cvv"><br>
+				<label for="pay__card--vence">Fecha de vencimiento</label><br>
+				<input type="text" placeholder="MM/AA " id="pay__card--vence"><br>
+				<input type="submit" value="Pagar">
+			</div> -->
+
+			<div class="plan__paypal">
+				<div class="">A</div>
+				<h2>Por: <img src="./image/paypal.png" alt="paypal"></h2><br>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="XYQW8VXKT9Z6J">
+					<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</div>
+
+			<div class="plan__banco">
+				<div class="">B</div>
+				<h2>Por: <strong>Deposito Bancario</strong></h2><br>
+				<article class="pagar__steps">
+					<figure>
+						<img src="image/steps/step1.png" alt="">
+					</figure>
+					<p>
+						Realiza el deposito bancario a la cuenta:
+					</p>
+					<ul>
+						<strong>
+							>400 3068610213<br>
+							(interbank-dolares)<br>
+						</strong>
+						<strong>
+							>411 3073616443<br>
+							(interbank-soles)
+						</strong>
+					</ul>
+				</article>
+				<article class="pagar__steps">
+					<figure>
+						<img src="image/steps/step2.png" alt="">
+					</figure>
+					<p>
+						Toma foto/escanea el boucher o recibo
+					</p>
+				</article>
+				<article class="pagar__steps">
+					<figure>
+						<img src="image/steps/step3.png" alt="">
+					</figure>
+					<p>
+						Envianos la foto/escaneo del boucher o recibo y el plan elegido a: <br>
+					</p>
+					<h4>web@cromlu.com</h4>	
+				</article>
+				<div class="pagar__mensaje">
+					<h3>
+						Te enviaremos un e-mail de confirmación a tu correo al recibir el pago <br>
+						y enseguida entraremos a la acción
+					</h3>
+				</div>
 			</div>
 		</div>
 </section>
