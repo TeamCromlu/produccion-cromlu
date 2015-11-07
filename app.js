@@ -27,6 +27,9 @@ app.get('/500', function (req, res){
   res.render('error_500')
 });
 
+app.get('/pago-termiano', function (req, res){
+  res.render('terminado')
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

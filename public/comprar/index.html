@@ -18,6 +18,11 @@
     <meta property="og:url" content="http://cromlu.com/comprar"/>
     <!--link para css -->
     <link rel="stylesheet" href="css/estilo.css">
+    <style>
+		.paypal-button-hidden {
+		      visibility: hidden;
+		    }
+    </style>
 </head>
 <body>
 <header class="Header-Main">
@@ -147,6 +152,8 @@
 		</article>
 	</div>
 </section>
+
+
 <section class="pagar">	
 		<div class="pagar__box">
 			<div class="plan__sub-title">
@@ -156,34 +163,51 @@
 				</h3>
 			</div>
 
-<!-- 			<div class="plan__tarjeta">
-				<div class="">A</div>
+			<!-- <div class="plan__tarjeta">
+				<div class="plan__opcion">A</div>
 				<h2>Por: <strong>Tarjeta de Credito/Debito</strong></h2><br>
-				<label for="pay__card--name">Titular de la tarjeta</label><br>
-				<input type="text" placeholder="Ingresa el nombre del titular" id="pay__card--name"><br>
-				<label for="pay__card--number">Numero de la tarjeta</label><br>
-				<input type="text" placeholder="Ingresa el numero " id="pay__card--number"><br>
-				<label for="pay__card--cvv">Codigo de Seguridad</label><br>
-				<input type="text" placeholder="CVV " id="pay__card--cvv"><br>
-				<label for="pay__card--vence">Fecha de vencimiento</label><br>
-				<input type="text" placeholder="MM/AA " id="pay__card--vence"><br>
-				<input type="submit" value="Pagar">
+				<form class="plan__form" method="post">
+					<label for="pay__card--name">Titular de la tarjeta</label><br>
+					<input type="text" placeholder="Ingresa el nombre del titular" id="pay__card--name"><br>
+					<label for="pay__card--number">Número de la tarjeta</label><br>
+					<input type="text" placeholder="Ingresa el numero " id="pay__card--number"><br>
+					<div class="plan__formDiv">
+						<div class="div">
+							<label for="pay__card--cvv">Codigo de Seguridad</label><br>
+							<input type="text" placeholder="CVV " id="pay__card--cvv">
+						</div>
+						<div class="div">
+							<label for="pay__card--vence">Fecha de vencimiento</label><br>
+							<input type="text" placeholder="MM/AA " id="pay__card--vence">
+						</div>
+					</div>
+					<input class="button" type="submit" value="Pagar">
+				</form>
 			</div> -->
 
-			<!-- <div class="plan__paypal">
-				<div class="">A</div>
-				<h2>Por: <img src="./image/paypal.png" alt="paypal"></h2><br>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="XYQW8VXKT9Z6J">
-					<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-					<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-				</form>
+			<div class="plan__paypal">
+				<div class="plan__opcion">A</div>
+				<div class="plan__titlePaypal">
+					<h2>Por: </h2>
+					<img width="120px"src="./image/paypal.png" alt="paypal">
+				</div>
+				<div class="plan__formPaypal">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="form_paypal">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="56PL63L7EDLNE">
+						<input type="image" class="bottomImage" src="./image/button2x.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+					</form>
+					<img src="./image/2.png" alt="Paylap y Cromlu">
+				</div>
+				<a class="plan__ayudaInfo" href="https://www.paypalobjects.com/webstatic/en_clac/mktg/wright/paypal_activate/video/Paypal-LAC-SPA-Version.mp4" target="_blank"><p>¿Que es paypal?</p></a>
 			</div>
- -->
+			
 			<div class="plan__banco">
-				<!-- <div class="">B</div> -->
-				<h2>Por: <strong>Deposito Bancario</strong></h2><br>
+				<div class="plan__titleB">
+					<div class="plan__opcion">B</div>
+					<h2>Por: <strong>Deposito Bancario</strong></h2><br>
+				</div>
 				<article class="pagar__steps">
 					<figure>
 						<img src="image/steps/step1.png" alt="">
@@ -226,13 +250,27 @@
 					</h3>
 				</div>
 			</div>
+
 		</div>
 </section>
+
 <section class="reto">
 	<h2>¿Listo para tener tu propio portafolio profesional en internet?</h2>
 </section>
 <footer>
 
 </footer>
+<script>
+      window.paypalCheckoutReady = function () {
+        paypal.checkout.setup('XYQW8VXKT9Z6J', {
+            environment: 'sandbox',
+            container: 'myContainer'
+          });
+      };
+</script>
+
+<script src="//www.paypalobjects.com/api/checkout.js" async></script>
+
+
 </body>
 </html>
