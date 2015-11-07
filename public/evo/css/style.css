@@ -11,12 +11,16 @@ body {
 }
 .link_ver{
   position: absolute;
-  top: 128px;
-  right: 159px;
   background: rgba(255, 160, 18, 0.78);
   padding: 1em 2em;
   color: white;
   text-decoration: none;
+  right: 0;
+  left: 0;
+  top: 31%;
+  display: block;
+  width: 40px;
+  margin: 0 auto;
 }
 .link_ver:hover{
   padding: 1.5em 2em;
