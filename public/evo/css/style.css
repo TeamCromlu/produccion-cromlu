@@ -9,6 +9,23 @@ html {
 body {
   background: #d3d3d3;
 }
+.link_ver{
+  position: absolute;
+  top: 128px;
+  right: 159px;
+  background: rgba(255, 160, 18, 0.78);
+  padding: 1em 2em;
+  color: white;
+  text-decoration: none;
+}
+.link_ver:hover{
+  padding: 1.5em 2em;
+  top: 119px;
+  background: rgba(255, 160, 18);
+}
+.enlace{
+  color: rgb(234, 148, 37);
+}
 .Header_main {
   background: rgba(251, 125, 44, 0.81);
   width: 100%;
@@ -146,6 +163,7 @@ body {
 .skill__one {
   display: block;
   padding-bottom: 2em;
+  position: relative;
 }
 .skill__one h3 {
   font-size: 1.5em;
@@ -156,7 +174,7 @@ body {
 .skill__one--img img {
   max-width: 100%;
 }
-.skill__one--img :hover {
+.skill__one--img :hover{
   -webkit-box-shadow: rgb(251, 255, 31) 0 0 35px;
   box-shadow: rgb(251, 255, 31) 0 0 35px;
 }
@@ -178,6 +196,7 @@ body {
   display: block;
   padding-top: .9em;
   padding-bottom: .9em;
+  position: relative;
 }
 .portafolio__one h3 {
   font-size: 1.5em;
