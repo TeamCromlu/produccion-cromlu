@@ -1,0 +1,57 @@
+.promocion-especial
+	background #f2f2f2
+	&__box
+		text-aligin center
+		max-width 900px
+		margin 0 auto
+		padding-top 1em
+		padding-bottom 2em
+	&__contenido
+		width 90%
+		margin 0 auto
+		.contenido__title
+			background #69FFF3
+			width 100%
+			padding-top .5em
+			padding-bottom .5em
+			h2
+				text-align center
+				font-size 2em
+				color white
+		.contenido__promo
+			background white
+			width 100%
+			margin 0 auto
+			text-align center
+			padding-top 1em
+			padding-bottom 1em
+			.promo__smile
+				display inline-block
+				width 20%
+				text-align center
+				vertical-align middle
+				img
+					width 50px
+			.promo__letra
+				display inline-block
+				width 70%
+				text-align center
+				vertical-align middle
+				p
+					font-size 1.4em
+					text-align left
+
+@media (min-width 768px)
+	.promocion-especial
+		&__box
+		&__contenido
+			.contenido__title
+				border-radius 6px 6px 0 0
+			.contenido__promo
+				border-radius 0 0 6px 6px
+				.promo__smile
+					img
+						width 70px
+				.promo__letra
+					p
+						text-align left

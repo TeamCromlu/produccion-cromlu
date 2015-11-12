@@ -66,6 +66,7 @@ body {
   width: 30px;
   height: 30px;
   -webkit-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
   display: inline-block;
@@ -90,7 +91,9 @@ body {
   margin-bottom: 1em;
   border: 1px solid #d3d3d3;
   -webkit-border-radius: 6px;
+  -webkit-border-radius: 6px;
   border-radius: 6px;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0 6px 20px;
   -webkit-box-shadow: rgba(0,0,0,0.2) 0 6px 20px;
   box-shadow: rgba(0,0,0,0.2) 0 6px 20px;
 }
@@ -98,6 +101,7 @@ body {
   background: #2de2d3;
   padding-top: 1em;
   padding-bottom: 1em;
+  -webkit-border-radius: 6px 6px 0 0;
   -webkit-border-radius: 6px 6px 0 0;
   border-radius: 6px 6px 0 0;
 }
@@ -125,6 +129,7 @@ body {
   padding-top: 2em;
   padding-bottom: 2em;
   -webkit-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
   color: #fff;
 }
@@ -144,12 +149,14 @@ body {
   width: 100%;
   border: 1px solid #d3d3d3;
   -webkit-border-radius: 6px;
+  -webkit-border-radius: 6px;
   border-radius: 6px;
 }
 .plan__paquetes .paquetes__premium .premium__title {
   padding-top: 1em;
   padding-bottom: 1em;
   background: #2ae475;
+  -webkit-border-radius: 6px 6px 0 0;
   -webkit-border-radius: 6px 6px 0 0;
   border-radius: 6px 6px 0 0;
 }
@@ -188,6 +195,7 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
   -webkit-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
   color: #fff;
 }
@@ -203,6 +211,7 @@ body {
   height: 30px;
   border: 1px solid #000;
   font-size: 1.5em;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   line-height: 30px;
   display: inline-block;
@@ -232,11 +241,14 @@ body {
   font-size: 1.3em;
 }
 .plan__form input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   margin: 0.5em 0 1em 0;
   padding: 0.5em;
   font-size: 1.3em;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   outline: 0;
   border: 1px solid #808080;
@@ -338,6 +350,136 @@ body {
   font-size: 1.4em;
   text-align: left;
 }
+@media (min-width: 768px) {
+  .plan__box {
+    max-width: 900px;
+  }
+  .plan__title h2 {
+    font-size: 3em;
+  }
+  .plan__sub-title {
+    font-size: 1.4em;
+  }
+  .plan__sub-title .numero-ico {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .plan__paquetes .paquetes__estandar {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-right: 2em;
+  }
+  .plan__paquetes .paquetes__estandar .estandar__precio h2 {
+    font-size: 3em;
+  }
+  .plan__paquetes .paquetes__premium {
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+  }
+  .plan__form {
+    width: 440px;
+  }
+  .plan__form input {
+    width: 100%;
+  }
+  .plan__form .button {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .plan__formDiv div {
+    width: 49%;
+    display: inline-block;
+  }
+  .plan__formDiv div:first-child {
+    margin-right: 0.2em;
+  }
+  .plan__formDiv div input {
+    width: 100%;
+  }
+  .plan__paypalButton {
+    margin: 0 auto;
+    max-width: 440px;
+  }
+}
+.promocion-especial {
+  background: #f2f2f2;
+}
+.promocion-especial__box {
+  text-aligin: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+.promocion-especial__contenido {
+  width: 90%;
+  margin: 0 auto;
+}
+.promocion-especial__contenido .contenido__title {
+  background: #69fff3;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.promocion-especial__contenido .contenido__title h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+.promocion-especial__contenido .contenido__promo {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.promocion-especial__contenido .contenido__promo .promo__smile {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+}
+.promocion-especial__contenido .contenido__promo .promo__smile img {
+  width: 50px;
+}
+.promocion-especial__contenido .contenido__promo .promo__letra {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  vertical-align: middle;
+}
+.promocion-especial__contenido .contenido__promo .promo__letra p {
+  font-size: 1.4em;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .promocion-especial__box .contenido__title,
+  .promocion-especial__contenido .contenido__title {
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+  }
+  .promocion-especial__box .contenido__promo,
+  .promocion-especial__contenido .contenido__promo {
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+  }
+  .promocion-especial__box .contenido__promo .promo__smile img,
+  .promocion-especial__contenido .contenido__promo .promo__smile img {
+    width: 70px;
+  }
+  .promocion-especial__box .contenido__promo .promo__letra p,
+  .promocion-especial__contenido .contenido__promo .promo__letra p {
+    text-align: left;
+  }
+}
 .pagar__box {
   text-align: center;
   margin: 0 auto;
@@ -375,104 +517,14 @@ body {
 .pagar__steps ul strong {
   font-size: 1.3em;
 }
-.pagar__mensaje {
+.pagar .pagar__mensaje {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.pagar__mensaje h3 {
+.pagar .pagar__mensaje h3 {
   font-size: 1.5em;
   width: 80%;
   margin: 0 auto;
-}
-.reto {
-  background: #f2f2f2;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-.reto h2 {
-  text-align: center;
-  font-size: 2em;
-  color: #1d1d1d;
-}
-@media (min-width: 768px) {
-  .plan__box {
-    max-width: 900px;
-  }
-  .plan__title h2 {
-    font-size: 3em;
-  }
-  .plan__sub-title {
-    font-size: 1.4em;
-  }
-  .plan__sub-title .numero-ico {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-  .plan__paquetes .paquetes__estandar {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
-    margin-right: 2em;
-  }
-  .plan__paquetes .paquetes__estandar .estandar__precio h2 {
-    font-size: 3em;
-  }
-  .plan__paquetes .paquetes__premium {
-    border: 1px solid #d3d3d3;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
-  }
-  .plan__form {
-    width: 440px;
-  }
-  .plan__form input {
-    width: 100%;
-  }
-  .plan__form .button {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .plan__formDiv div {
-    width: 49%;
-    display: inline-block;
-  }
-  .plan__formDiv div:first-child {
-    margin-right: 0.2em;
-  }
-  .plan__formDiv div input {
-    width: 100%;
-  }
-  .plan__paypalButton {
-    margin: 0 auto;
-    max-width: 440px;
-  }
-}
-@media (min-width: 768px) {
-  .promocion-especial__box .contenido__title,
-  .promocion-especial__contenido .contenido__title {
-    -webkit-border-radius: 6px 6px 0 0;
-    border-radius: 6px 6px 0 0;
-  }
-  .promocion-especial__box .contenido__promo,
-  .promocion-especial__contenido .contenido__promo {
-    -webkit-border-radius: 0 0 6px 6px;
-    border-radius: 0 0 6px 6px;
-  }
-  .promocion-especial__box .contenido__promo .promo__smile img,
-  .promocion-especial__contenido .contenido__promo .promo__smile img {
-    width: 70px;
-  }
-  .promocion-especial__box .contenido__promo .promo__letra p,
-  .promocion-especial__contenido .contenido__promo .promo__letra p {
-    text-align: left;
-  }
-  .plan__formPaypal img {
-    margin-left: 1em;
-  }
 }
 @media (min-width: 768px) {
   .pagar__box {
@@ -490,7 +542,7 @@ body {
   .pagar__steps img {
     width: 170px;
   }
-  .pagar__mensaje h3 {
+  .pagar .pagar__mensaje h3 {
     font-size: 1.5em;
   }
 }
@@ -503,6 +555,16 @@ body {
   .pagar__steps {
     width: 25%;
   }
+}
+.reto {
+  background: #f2f2f2;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.reto h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #1d1d1d;
 }
 @media (min-width: 768px) {
   .reto h2 {

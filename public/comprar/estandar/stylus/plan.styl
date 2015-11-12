@@ -1,34 +1,3 @@
-*
-  margin 0
-  padding 0
-
-html
-  font-family 'Arial', sans-serif
-  font-size 16px
-
-body
-  background #fff
-
-.Header-Main
-  background #fff
-  &__box
-    text-align left
-    margin-bottom .5em
-  &__logo
-    margin-left 1em
-    margin-top .5em
-    a
-      text-decoration none
-      color #3a3a3a
-      img
-        width 50px
-        display inline-block
-        vertical-align middle
-      h1
-        display inline-block
-        vertical-align middle
-        font-size 1.5rem
-
 .plan
   background #f2f2f2
   padding-top 2em
@@ -115,6 +84,8 @@ body
         p
           font-size 1em
           color #292929
+          &-btn--action
+          	color white
     .paquetes__premium
       display block
       width 100%
@@ -239,7 +210,7 @@ body
       max-width 200px
   &__titleB
     margin 1.5em 0
-
+    
 .promocion-especial
   background #f2f2f2
   &__box
@@ -283,153 +254,50 @@ body
           font-size 1.4em
           text-align left
 
-.pagar
-  &__box
-    text-align center
-    margin 0 auto
-    padding-top 3em
-    padding-bottom 2em
-  &__steps
-    width 80%
-    display block
-    text-align center
-    margin 0 auto
-    padding-bottom 1em
-    figure
-      margin 0 auto
-      img
-        width 230px
-    p
-      width 80%
-      font-size 1.3em
-      margin 0 auto
-    h4
-      margin-top .5em
-      font-size 1.3em
-    ul
-      list-style none
-      width 190px
-      margin .7em auto
-      text-align left
-      strong
-        font-size 1.3em
-  &__mensaje
-    padding-top 1em
-    padding-bottom 1em
-    h3
-      font-size 1.5em
-      width 80%
-      margin 0 auto
-
-
-.reto
-  background #f2f2f2
-  padding-top 2em
-  padding-bottom 2em
-  h2
-    text-align center
-    font-size 2em
-    color #1d1d1d
-
-
-
-
-
-
 @media (min-width 768px)
-  .plan__box
-    max-width 900px
-  .plan__title
-    h2
-      font-size 3em
-  .plan__sub-title
-    font-size 1.4em
-    .numero-ico
-      width 50px
-      height 50px
-      line-height 50px
-  .plan__paquetes
-    .paquetes__estandar
-      display inline-block
-      vertical-align top
-      width 45%
-      margin-right 2em
-      .estandar__precio
-        h2
-          font-size 3em
-    .paquetes__premium
-      border 1px solid #d3d3d3
-      -webkit-border-radius 6px
-      border-radius 6px
-      display inline-block
-      vertical-align top
-      width 45%
-  .plan__form
-    // text-align left
-    width 440px
-    input
-      width 100%
-    .button
-      width 100%
-      margin 0 auto
-  .plan__formDiv
-    div
-      width 49%
-      display inline-block
-      &:first-child
-        margin-right .2em
-      input
-        width 100%
-  .plan__paypalButton
-    margin 0 auto
-    max-width 440px
-    
-
-@media (min-width 768px)
-  .promocion-especial__box .contenido__title, .promocion-especial__contenido .contenido__title
-    -webkit-border-radius 6px 6px 0 0
-    border-radius 6px 6px 0 0
-
-  .promocion-especial__box .contenido__promo, .promocion-especial__contenido .contenido__promo
-    -webkit-border-radius 0 0 6px 6px
-    border-radius 0 0 6px 6px
-
-  .promocion-especial__box .contenido__promo .promo__smile img, .promocion-especial__contenido .contenido__promo .promo__smile img
-    width 70px
-
-  .promocion-especial__box .contenido__promo .promo__letra p, .promocion-especial__contenido .contenido__promo .promo__letra p
-    text-align left
-  .plan__formPaypal
-    img
-      margin-left 1em
-
-@media (min-width 768px)
-  .pagar
-    &__box
-      text-align center
-      margin 0 auto
-      max-width 1300px
-    &__steps
-      width 34%
-      display inline-block
-      vertical-align top
-      margin-right 2em
-      margin-left 2em
-      img
-        width 170px
-    &__mensaje
-      h3
-        font-size 1.5em
-
-@media (min-width 1000px)
-  .pagar__box
-    text-align center
-    margin 0 auto
-    max-width 1300px
-  .pagar__steps
-    width 25%
-
-@media (min-width 768px) 
-  .reto
-    h2
-      font-size:3em
+	.plan__box
+	  max-width 900px
+	.plan__title
+	  h2
+	    font-size 3em
+	.plan__sub-title
+	  font-size 1.4em
+	  .numero-ico
+	    width 50px
+	    height 50px
+	    line-height 50px
+	.plan__paquetes
+	  .paquetes__estandar
+	    display inline-block
+	    vertical-align top
+	    width 45%
+	    margin-right 2em
+	    .estandar__precio
+	      h2
+	        font-size 3em
+	  .paquetes__premium
+	    border 1px solid #d3d3d3
+	    -webkit-border-radius 6px
+	    border-radius 6px
+	    display inline-block
+	    vertical-align top
+	    width 45%
+	.plan__form
+	  // text-align left
+	  width 440px
+	  input
+	    width 100%
+	  .button
+	    width 100%
+	    margin 0 auto
+	.plan__formDiv
+	  div
+	    width 49%
+	    display inline-block
+	    &:first-child
+	      margin-right .2em
+	    input
+	      width 100%
+	.plan__paypalButton
+	  margin 0 auto
+	  max-width 440px
