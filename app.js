@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var llamada = require('./routes/llamada');
 
 var app = express();
 
@@ -22,6 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/', llamada);
 
 app.get('/500', function (req, res){
   res.render('error_500')
@@ -30,6 +32,8 @@ app.get('/500', function (req, res){
 app.get('/pago-termiano', function (req, res){
   res.render('terminado')
 });
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

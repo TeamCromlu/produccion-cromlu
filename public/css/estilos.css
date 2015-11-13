@@ -1368,3 +1368,84 @@ margin
   text-decoration: underline;
   color: #87ceeb;
 }
+.Header-Main {
+  background: #fff;
+}
+.Header-Main__box {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.Header-Main__logo {
+  margin-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.Header-Main__logo a {
+  text-decoration: none;
+  color: gris_title;
+}
+.Header-Main__logo a img {
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header-Main__logo a h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: #000;
+}
+.body__llamada {
+  background: #efefef;
+}
+.Call {
+  max-width: 600px;
+  margin: 3em auto;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.Call__art h1 {
+  padding: 0.5em 0;
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #40dcaa;
+  border-radius: 4px 4px 0 0;
+}
+.Call__art h2 {
+  color: #464646;
+  padding-top: 0.7em;
+  padding-bottom: 0.5em;
+  font-size: 1.7em;
+}
+.Call__art p {
+  color: #171717;
+  font-size: 1.4em;
+  line-height: 1.4;
+  padding-bottom: 1.5em;
+}
+.Call__art p span {
+  font-weight: bold;
+}
+.Footer-Main {
+  background: #0a192b;
+}
+.Footer-Main__box {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.Footer-Main p {
+  color: #fff;
+  font-size: 1em;
+}
+.Footer-Main a {
+  text-decoration: none;
+  color: #36e3ff;
+}
+.Footer-Main a:hover {
+  text-decoration: underline;
+  color: #87ceeb;
+}

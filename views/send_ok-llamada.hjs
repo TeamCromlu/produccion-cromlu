@@ -9,17 +9,10 @@
 	<meta name="description" content="Diseñamos tu propio portafolio profesional en la web 24/7 de forma efectiva, Comparte tu experiencia profesional en un solo lugar, donde quieras y cuando quieras @TeamCromlu">
 	<!--Favicom-->
 	<link rel="icon" type="image/png" href="image/cromlu.ico" />
-	<!-- link de estilos -->
-	<link rel="stylesheet" href="css/comprar.css">
-	<!--Vista para facebook-->
-	<meta property="og:title" content="Cromlu: Tu propio portafolio profesional en la web 24/7"/>
-    <meta property="og:description" content="Comparte tu experiencia profesional en un solo lugar, donde quieras y cuando quieras @TeamCromlu"/>
-    <meta property="og:image" content="http://cromlu.com/comprar.png"/>   
-    <meta property="og:url" content="http://cromlu.com/comprar"/>
     <!--link para css -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="body__llamada">
 <header class="Header-Main">
 	<div class="Header-Main__box">
 		<figure class="Header-Main__logo">
@@ -34,12 +27,14 @@
 	<div class="Call__box">
 		<article class="Call__art">
 			<h1>
-				Listo, tenemos tu número ;)
+				Ok, <span>{{nombre}}</span> te llamaremos ;)
 			</h1>
 			<h2>
 				Te llamaremos a la hora indicada
 			</h2>
-			<p>
+			<p> <strong>Tu email:</strong> <span>{{email}}</span><br>
+				<strong>Tu numero:</strong> <span>{{numero}}</span><br>
+				<strong>Hora Indicada:</strong> <span>{{indicada}}</span><br>
 				En todo caso puedes <br>
 				Llamarnos a: <br>
 				+51 945873773 <br>
