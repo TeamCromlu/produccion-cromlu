@@ -33,7 +33,21 @@ app.get('/pago-termiano', function (req, res){
   res.render('terminado')
 });
 
+app.get('/cursos', function (req, res){
+  res.redirect('http://cursos.cromlu.com')
+});
 
+app.get('/frontend', function (req, res){
+  res.redirect('http://cursos.cromlu.com/frontend')
+});
+
+app.get('/git', function (req, res){
+  res.redirect('http://cursos.cromlu.com/git')
+});
+
+app.get('/backend', function (req, res){
+  res.redirect('http://cursos.cromlu.com/backend')
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
